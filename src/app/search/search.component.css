@@ -1,0 +1,22 @@
+form {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 40vw;
+}
+input {
+  height: 65px;
+  width: 65px;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  border: 3px solid #2f2f2f;
+  background: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+input.letter--green {
+  background: #3eaa42;
+  border-color: #3eaa42;
+}

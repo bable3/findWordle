@@ -1,0 +1,41 @@
+<form [formGroup]="wordForm" (input)="search()">
+  <input
+    maxlength="1"
+    type="text"
+    [ngClass]="{ 'letter--green': wordForm.controls.firstLetter.value != null }"
+    oninput="value = value.toUpperCase()"
+    formControlName="firstLetter"
+  />
+  <input
+    maxlength="1"
+    type="text"
+    [ngClass]="{
+      'letter--green': wordForm.controls.secondLetter.value != null
+    }"
+    oninput="value = value.toUpperCase()"
+    formControlName="secondLetter"
+  />
+  <input
+    maxlength="1"
+    type="text"
+    [ngClass]="{ 'letter--green': wordForm.controls.thirdLetter.value != null }"
+    formControlName="thirdLetter"
+    oninput="value = value.toUpperCase()"
+  />
+  <input
+    maxlength="1"
+    type="text"
+    [ngClass]="{
+      'letter--green': wordForm.controls.fourthLetter.value != null
+    }"
+    formControlName="fourthLetter"
+    oninput="value = value.toUpperCase()"
+  />
+  <input
+    maxlength="1"
+    type="text"
+    [ngClass]="{ 'letter--green': wordForm.controls.fithLetter.value != null }"
+    formControlName="fithLetter"
+    oninput="value = value.toUpperCase()"
+  />
+</form>

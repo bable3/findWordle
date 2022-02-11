@@ -1,0 +1,13 @@
+.results {
+  background: #1d1d20;
+  color: white;
+  max-width: 700px;
+  width: 100vw;
+  display: flex;
+  margin: 40px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 6px;
+}
